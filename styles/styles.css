@@ -79,6 +79,11 @@ body {
   float: right;
 }
 
+.title-section {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
 .title {
   margin: 0 auto 56px;
   text-align: center;
@@ -93,14 +98,6 @@ body {
 }
 
 .socials {  
-  text-align: center;
-  font-size: 0;
-  height: 16px;
-  line-height: 16px;
-  margin-bottom: 2143px;
-}
-
-.socials-footer {
   font-size: 0;
 }
 
@@ -142,8 +139,136 @@ body {
   background-size: cover;
 }
 
+.works-section {
+  margin-bottom: 120px;
+}
+
+.works-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.work-item:last-child {
+  margin-bottom: 0;
+}
+
+.work-item-image {
+  width: 520px;
+  vertical-align: top;
+}
+
+.work-item-text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 60px;
+  margin-bottom: 63px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.29;
+}
+
+.work-item-featured {
+  position: absolute;
+  bottom: 0;  
+  margin-left: 60px;
+  margin-bottom: 152px;
+  border-radius: 13.5px;
+  background-color: #ffe300;
+  font-size: 12px;
+  font-weight: 900;  
+  padding: 2px 15px 6px;  
+  color: #000000;
+}
+
+.about-section {
+  margin-bottom: 118px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 62px;
+}
+
+.about-item {
+  width: calc(50% - 30px);
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px; 
+  margin-bottom: 59px;
+}
+
+.about-item:nth-child(2n) {
+  padding-right: 55px; 
+}
+
+.about-item-heading {
+  font-size: 28px;  
+  font-weight: normal;
+  line-height: 1.07;
+  margin-bottom: 31px;
+}
+
+.about-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.about-links {
+  display: flex;
+  font-size: 0;
+}
+
+.about-links-items {
+  display: inline-block;
+  width: 25%;
+}
+
+.about-links-google{
+  display: inline-block;
+  background: url(../img/google.svg);
+  width: 129px;
+  height: 43px;
+  background-size: cover;
+}
+
+.about-links-airbnb{
+  display: inline-block;
+  background: url(../img/airbnb.svg);
+  width: 138px;
+  height: 43px;
+  background-size: cover;
+}
+
+.about-links-dropbox{
+  display: inline-block;
+  background: url(../img/dropbox.svg);
+  width: 44px;
+  height: 43px;
+  background-size: cover;
+}
+
+
+
+
+
+
 footer {
-  margin: 0 auto;
+  margin: 120px auto 0;
   max-width: 1100px;
 }
 
@@ -152,34 +277,23 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  font-size: 16px;
   line-height: 1.88;
   padding-bottom: 90px;
-
-  margin-bottom: ;
 }
 
 .links-item {
-  width: 50%;
+  width: calc(50% - 30px);
   color: #979797;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.links-item:nth-child(2n-1) {
-  padding-right: 30px;
-}
-
-.links-item:nth-child(2n) {
-  padding-left: 30px;
-}
-
-.footer-title {
+.footer-heading {
   font-size: 28px;
+  font-weight: normal;
   line-height: 1.07;
   margin-bottom: 61px;
-  margin-top: 119px;
 }
 
 .footer-info {
@@ -188,7 +302,7 @@ footer {
   padding-bottom: 118px;
 }
 
-.footer-text {
+.footer-aside {
   width: 230px; 
   margin-right: 45px;
 }
@@ -200,10 +314,15 @@ footer {
 }
 
 .contacts-form {
-  width: 67.5%;
   display: flex;
-  flex-direction: column;
+  width: 75%;
   margin-top: 1px;
+}
+
+.contacts-fieldset {
+  width: 90%;
+  display: flex;
+  border: none;
 }
 
 .contacts-label {
@@ -216,6 +335,7 @@ footer {
 
 .input-field {
   height: 54px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
   margin-bottom: 29px;
@@ -230,7 +350,7 @@ footer {
 
 .textarea {
   height: 134px;
-  resize: none;
+  resize: vertical;
   margin-bottom: 0;
 }
 
@@ -250,7 +370,8 @@ footer {
   justify-content: space-between;
 }
 
-.copyright {
+.copyright {  
+  font-size: 16px;
   line-height: 1.88;
 }
 
