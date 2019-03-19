@@ -23,7 +23,7 @@ body {
 .header {
   text-align: center;
   padding-top: 100px;
-  margin-bottom: 114px;
+  margin-bottom: 115px;
 }
 
 .nav {
@@ -81,11 +81,11 @@ body {
 
 .title-section {
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 119px;
 }
 
 .title {
-  margin: 0 auto 56px;
+  margin: 0 auto 55px;
   text-align: center;
   font-size: 48px;
   line-height: 1.25;
@@ -140,7 +140,23 @@ body {
 }
 
 .works-section {
-  margin-bottom: 120px;
+  margin-bottom: 118px;
+  position: relative;
+}
+
+.section-title {
+  text-transform: uppercase;
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #979797;
+}
+
+.works-title {
+  left: -100px;
+  top: 24px;
 }
 
 .works-wrapper {
@@ -193,7 +209,13 @@ body {
 }
 
 .about-section {
+  position: relative;
   margin-bottom: 118px;
+}
+
+.about-title {
+  left: -99px;
+  top: 26px;
 }
 
 .about-list {
@@ -201,7 +223,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 62px;
+  margin-bottom: 2px;
 }
 
 .about-item {
@@ -209,7 +231,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 30px; 
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 }
 
 .about-item:nth-child(2n) {
@@ -262,14 +284,18 @@ body {
   background-size: cover;
 }
 
-
-
-
-
-
 footer {
-  margin: 120px auto 0;
+  margin: 119px auto 0;
   max-width: 1100px;
+}
+
+.links-section {
+  position: relative;
+}
+
+.links-title {
+  left: -95px;
+  top: 21px;
 }
 
 .links {
@@ -346,12 +372,17 @@ footer {
   font-size: 16px;
   line-height: 1.88;
   color: #cfcfcf;
+  padding-top: 12px;
 }
 
 .textarea {
   height: 134px;
   resize: vertical;
   margin-bottom: 0;
+}
+
+.textarea::placeholder {
+  padding-top: 12px;
 }
 
 .submit-button {
@@ -361,7 +392,7 @@ footer {
   width: 52px;
   height: 52px;
   background-color: #cfcfcf;
-  margin: 2px 0 0 30px;
+  margin-left: 30px;
 }
 
 .footer-copyright {
