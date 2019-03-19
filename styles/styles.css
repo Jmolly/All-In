@@ -356,11 +356,11 @@ footer {
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
 }
 
 .input-field {
-  height: 54px;
+  height: 37px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
@@ -370,19 +370,21 @@ footer {
 .input-field::placeholder {
   font-family: Lato, sans-serif;
   font-size: 16px;
-  line-height: 1.88;
   color: #cfcfcf;
-  padding-top: 12px;
 }
 
 .textarea {
-  height: 134px;
+  height: 117px;
   resize: vertical;
-  margin-bottom: 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 .textarea::placeholder {
-  padding-top: 12px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  color: #cfcfcf;
 }
 
 .submit-button {
@@ -407,7 +409,7 @@ footer {
 }
 
 .footer-nav {
-  width: 339px;
+  width: 338px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 122px;
