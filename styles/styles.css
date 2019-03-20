@@ -116,7 +116,6 @@ body {
   background: url(../img/twitter.svg);
   width: 17px;
   height: 13.8px;
-  background-size: cover;
 }
 
 .social-link-be {
@@ -124,7 +123,6 @@ body {
   background: url(../img/be.svg);
   width: 21px;
   height: 13px;
-  background-size: cover;
 }
 
 .social-link-instagram {
@@ -132,7 +130,6 @@ body {
   background: url(../img/instagram.svg);
   width: 16px;
   height: 16px;
-  background-size: cover;
 }
 
 .works-section {
@@ -248,7 +245,6 @@ body {
 }
 
 .about-links-items {
-  display: inline-block;
   width: 25%;
 }
 
@@ -257,7 +253,6 @@ body {
   background: url(../img/google.svg);
   width: 129px;
   height: 43px;
-  background-size: cover;
 }
 
 .about-links-airbnb{
@@ -265,7 +260,6 @@ body {
   background: url(../img/airbnb.svg);
   width: 138px;
   height: 43px;
-  background-size: cover;
 }
 
 .about-links-dropbox{
@@ -273,12 +267,12 @@ body {
   background: url(../img/dropbox.svg);
   width: 44px;
   height: 43px;
-  background-size: cover;
 }
 
 footer {
   margin: 119px auto 0;
   max-width: 1100px;
+  padding-bottom: 122px;
 }
 
 .links-section {
@@ -317,7 +311,7 @@ footer {
 .footer-info {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 118px;
+  margin-bottom: 117px;
 }
 
 .footer-aside {
@@ -326,7 +320,6 @@ footer {
 }
 
 .contacts-text{
-  text-align: left;
   line-height: 1.88;
   margin-bottom: 32px;
 }
@@ -334,7 +327,6 @@ footer {
 .contacts-form {
   display: flex;
   width: 75%;
-  margin-top: 1px;
 }
 
 .contacts-fieldset {
@@ -356,7 +348,7 @@ footer {
   width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .input-field::placeholder {
@@ -400,18 +392,14 @@ footer {
   line-height: 1.88;
 }
 
-.footer-nav {
+.footer-list {
   width: 338px;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 122px;
 }
 
-.footer-nav-item {
-  display: inline-block;
-}
-
-.footer-nav-link {
+.footer-link {
   line-height: 1.88;
   text-decoration: none;
   color: #979797;
