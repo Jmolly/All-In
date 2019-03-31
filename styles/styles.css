@@ -12,8 +12,8 @@ body {
 .wrapper {
   margin: 0 auto;
   max-width: 1100px;
-  background: linear-gradient(90deg, #ededed 1px, transparent 0%) 1px, #fff;
-  background-size: calc(25% - 1px) 1px;
+  background: linear-gradient(90deg, #ededed 1px, transparent 0%), #fff;
+  background-size: calc(25% - 0.25px) 1px;
 }
 
 .wrapper-header-main {
@@ -22,7 +22,7 @@ body {
 
 .header {
   padding-top: 100px;
-  margin-bottom: 116px;
+  margin-bottom: 136px;
 }
 
 .nav {
@@ -34,6 +34,7 @@ body {
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 3px;
+  padding-top: 17px;
 }
 
 .nav-link {
@@ -41,8 +42,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #007fff;
-  padding-top: 17px;
-  padding-bottom: 20px;
 }
 
 .avatar {
@@ -67,6 +66,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  padding-top: 0;
 }
 
 .nav-item:nth-child(4) {
@@ -78,7 +78,7 @@ body {
   float: right;
 }
 
-.title-section {
+.introduction {
   text-align: center;
   margin-bottom: 119px;
 }
@@ -132,7 +132,7 @@ body {
   height: 16px;
 }
 
-.works-section {
+.works {
   margin-bottom: 118px;
   position: relative;
 }
@@ -157,7 +157,7 @@ body {
   justify-content: space-between;
 }
 
-.works {
+.work-items {
   display: flex;
   flex-direction: column;
 }
@@ -176,6 +176,22 @@ body {
   vertical-align: top;
 }
 
+.first-image {
+  height: 505px;
+}
+
+.second-image {
+  height: 737px;
+}
+
+.third-image {
+  height: 667px;
+}
+
+.fourth-image {
+  height: 435px;
+}
+
 .work-item-text {
   position: absolute;
   bottom: 0;
@@ -188,19 +204,17 @@ body {
 }
 
 .work-item-featured {
-  position: absolute;
-  bottom: 0;  
-  margin-left: 60px;
-  margin-bottom: 152px;
+  display: inline-block;
+  margin-bottom: 17px;
   border-radius: 13.5px;
   background-color: #ffe300;
   font-size: 12px;
-  font-weight: 900;  
-  padding: 2px 15px 6px;  
+  font-weight: 900;
+  padding: 2px 15px 6px;
   color: #000000;
 }
 
-.about-section {
+.about {
   position: relative;
   margin-bottom: 118px;
 }
@@ -215,7 +229,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 2px;
+  margin-bottom: 62px;
 }
 
 .about-item {
@@ -226,6 +240,10 @@ body {
 
 .about-item:nth-child(2n) {
   padding-right: 55px; 
+}
+
+.about-item:last-child, .about-item:nth-last-child(2) {
+  margin-bottom: 0;
 }
 
 .about-item-title {
@@ -269,12 +287,6 @@ body {
   height: 43px;
 }
 
-footer {
-  margin: 119px auto 0;
-  max-width: 1100px;
-  padding-bottom: 122px;
-}
-
 .links-section {
   position: relative;
 }
@@ -301,20 +313,25 @@ footer {
   margin-bottom: 30px;
 }
 
-.footer-title {
+.contacts {
+  margin: 119px auto 0;
+  max-width: 1100px;
+  margin-bottom: 118px;
+}
+
+.contacts-title {
   font-size: 28px;
   font-weight: normal;
   line-height: 1.07;
   margin-bottom: 61px;
 }
 
-.footer-info {
+.contacts-info {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 117px;
 }
 
-.footer-aside {
+.contacts-aside {
   width: 230px; 
   margin-right: 45px;
 }
@@ -340,15 +357,16 @@ footer {
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .input-field {
-  height: 37px;
+  font-size: 16px;
+  height: 51px;
   width: 100%;
   border: none;
   border-bottom: 1px solid #cfcfcf;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .input-field::placeholder {
@@ -358,7 +376,10 @@ footer {
 }
 
 .textarea {
-  height: 117px;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  height: 131px;
   resize: vertical;
   width: 100%;
   border: none;
@@ -366,6 +387,7 @@ footer {
 }
 
 .textarea::placeholder {
+  line-height: 1.88;
   font-family: Lato, sans-serif;
   font-size: 16px;
   color: #cfcfcf;
@@ -379,6 +401,12 @@ footer {
   height: 52px;
   background-color: #cfcfcf;
   margin-left: 30px;
+}
+
+.footer {
+  padding-bottom: 122px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .footer-copyright {
