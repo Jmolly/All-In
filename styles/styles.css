@@ -44,6 +44,10 @@ body {
   color: #007fff;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+}
+
 .avatar {
   display: inline-block;
   width: 52px;
@@ -95,12 +99,20 @@ body {
   color: #007fff;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .socials {  
   font-size: 0;
 }
 
 .social-item {
   display: inline-block;
+}
+
+.social-item:hover {
+  transform: translateY(1px);
 }
 
 .social-item:nth-child(n) {
@@ -262,7 +274,7 @@ body {
   font-size: 0;
 }
 
-.about-links-items {
+.about-links-item {
   width: 25%;
 }
 
@@ -401,6 +413,12 @@ body {
   height: 52px;
   background-color: #cfcfcf;
   margin-left: 30px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #c2c2c2;
+  transition: 0.5s ease;
 }
 
 .footer {
@@ -431,4 +449,8 @@ body {
   line-height: 1.88;
   text-decoration: none;
   color: #979797;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
